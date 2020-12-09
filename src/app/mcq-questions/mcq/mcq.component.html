@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- [ngClass]="option1? 'correct': 'default'" -->
+<div #myDiv>Hello All</div>
+<div class="container mt-5" >
+<div class="container card p-5 m-auto ques" >
+    <h5 id="question" class="card-title"><span>1)  </span>  {{mcq.questions}}</h5>
+    <div class=" border options">
+            <div class="form-check" #option1 >
+    <input (click)="selected(mcq.option1)"  [disabled]="setValue"  class="form-check-input" type="radio" name="option" id="option1">
+  <label class="form-check-label" for="option1">
+    {{mcq.option1}}
+  </label>
+</div>
+<div  class="form-check" #option2 >
+  <input (click)="selected(mcq.option2)"   [disabled]="setValue"   class="form-check-input" type="radio" name="option" id="option2">
+  <label class="form-check-label" for="option2">
+    {{mcq.option2}}
+  </label>
+</div>
+<div class="form-check" #option3 >
+    <input (click)="selected(mcq.option3)"  [disabled]="setValue"  class="form-check-input" type="radio" name="option" id="option3" >
+    <label class="form-check-label" for="option3">
+      {{mcq.option3}}
+    </label>
+  </div>
+  <div class="form-check" #option4 >
+    <input (click)="selected(mcq.option4)"  [disabled]="setValue"  class="form-check-input" type="radio" name="option" id="option4" >
+    <label class="form-check-label" for="option4">
+      {{mcq.option4}}
+    </label>
+  </div>
+</div>
+  <a (click)="goPrevious()">Previous</a>
+  <a (click)="goNext()">Next</a>
+</div>
+<div >
+
+</div>
+</div>
+

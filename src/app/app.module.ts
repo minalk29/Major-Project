@@ -4,11 +4,13 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TerminalComponent } from './terminal/terminal.component';
+import { McqComponent } from './mcq-questions/mcq/mcq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TerminalComponent,
+    McqComponent,
    
    
   ],

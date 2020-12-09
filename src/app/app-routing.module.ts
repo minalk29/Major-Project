@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { McqComponent } from './mcq-questions/mcq/mcq.component';
 
-const routes: Routes = [];
+const routes: Routes = [{path:'mcq/:id',component:McqComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
